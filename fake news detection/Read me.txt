@@ -1,0 +1,78 @@
+Fake News Detection using Machine Learning
+
+This project aims to detect fake news articles using a supervised machine learning model trained on two datasets: one containing true news and the other containing fake news.
+
+
+
+Datasets
+
+This project uses the following datasets (in `.xlsx` format):
+
+- `True.xlsx` — Contains real news articles
+- `Fake.xlsx` — Contains fake news articles
+
+Each dataset includes the following columns:
+- `title`
+- `text`
+- `subject`
+- `date`
+
+
+
+Requirements
+
+Make sure the following libraries are installed:
+
+
+pip install pandas numpy sklearn matplotlib seaborn nltk openpyxl
+
+
+
+
+Project Overview
+
+1. Load the datasets (True and Fake news)
+2. Preprocess the data (remove stopwords, punctuation, and lowercase)
+3. Combine both datasets and label them (`1` for True, `0` for Fake)
+4. Vectorize the text using `TfidfVectorizer`
+5. Train/Test Split
+6. Train the model using Logistic Regression
+7. Evaluate the model using accuracy, confusion matrix, and classification report
+
+
+
+Model Training
+
+The model is trained using `LogisticRegression` from `sklearn`. You can retrain the model with your own dataset by replacing the Excel files and running the notebook again.
+
+
+Output
+
+The final output includes:
+
+* Model accuracy
+* Confusion matrix
+* Classification report
+
+
+
+Notes
+
+* This project is for educational purposes.
+* You can extend it with other models (e.g., SVM, RandomForest, or LSTM).
+* The model currently uses basic NLP preprocessing; improvements can be made using advanced techniques (e.g., lemmatization, POS tagging).
+
+
+
+Author
+
+* Nowfal
+* GitHub: https://github.com/Nowfal7861
+
+
+
+License
+
+This project is open-source and free to use under the MIT License.
+
+
